@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta
+            name="title"
+            content="INAVI: Indoor Navigation Assistance for the Visually Impaired"
+        />
+        <meta
+            name="description"
+            content="INAVI is an AI-powered indoor navigation assistant robot for visually impaired users, combining voice interaction, computer vision, and motion planning."
+        />
+        <meta
+            name="keywords"
+            content="INAVI, indoor navigation, visual impairment, assistive robotics, computer vision, AI, LLM"
+        />
+        <meta name="author" content="Krishna Jaganathan" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="INAVI Project Page" />
+        <meta
+            property="og:title"
+            content="INAVI: Indoor Navigation Assistance for the Visually Impaired"
+        />
+        <meta
+            property="og:description"
+            content="INAVI assists visually impaired users in unfamiliar indoor environments using voice interaction, obstacle detection, and path planning."
+        />
+        <meta property="og:image" content="static/images/inavi-teaser.png" />
+        <meta property="og:image:alt" content="INAVI project teaser image" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="INAVI: Indoor Navigation Assistance for the Visually Impaired"
+        />
+        <meta
+            name="twitter:description"
+            content="AI-powered indoor navigation assistance for visually impaired users."
+        />
+        <meta name="twitter:image" content="static/images/inavi-teaser.png" />
+
+        <meta name="theme-color" content="#2563eb" />
+        <meta name="msapplication-TileColor" content="#2563eb" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <title>INAVI</title>
+
+        <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg" />
+        <link rel="apple-touch-icon" href="static/images/favicon.ico" />
+
+        <link rel="stylesheet" href="static/css/bulma.min.css" />
+        <link rel="stylesheet" href="static/css/index.css" />
+        <link
+            rel="preload"
+            href="static/css/bulma-carousel.min.css"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
+        />
+        <link
+            rel="preload"
+            href="static/css/bulma-slider.min.css"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
+        />
+        <link
+            rel="preload"
+            href="static/css/fontawesome.all.min.css"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
+        />
+
+        <noscript>
+            <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+            <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+            <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+        </noscript>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <script
+            defer
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ></script>
+        <script defer src="static/js/fontawesome.all.min.js"></script>
+        <script defer src="static/js/bulma-carousel.min.js"></script>
+        <script defer src="static/js/bulma-slider.min.js"></script>
+        <script defer src="static/js/index.js"></script>
+    </head>
+    <body>
+        <button
+            class="scroll-to-top"
+            onclick="scrollToTop()"
+            title="Scroll to top"
+            aria-label="Scroll to top"
+        >
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <main id="main-content">
+            <section class="hero">
+                <div class="hero-body">
+                    <div class="container is-max-desktop">
+                        <div class="columns is-centered">
+                            <div class="column has-text-centered">
+                                <h1 class="title is-1 publication-title">
+                                    INAVI: Indoor Navigation Assistance for the
+                                    Visually Impaired
+                                </h1>
+                                <div class="is-size-5 publication-authors">
+                                    <span class="author-block">
+                                        Krishna Jaganathan
+                                    </span>
+                                </div>
+                                <div class="publication-venue">
+                                    NeurIPS 2024 High School Track - Spotlight
+                                </div>
+                                <div class="column has-text-centered">
+                                    <div class="publication-links">
+                                        <span class="link-block">
+                                            <a
+                                                href="https://blog.neurips.cc/2024/11/18/announcing-the-neurips-high-school-projects-results/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="external-link button is-normal is-rounded is-dark"
+                                            >
+                                                <span class="icon">
+                                                    <i
+                                                        class="fas fa-newspaper"
+                                                    ></i>
+                                                </span>
+                                                <span>Post</span>
+                                            </a>
+                                        </span>
+                                        <span class="link-block">
+                                            <a
+                                                href="https://github.com/kjaca321/inavi"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="external-link button is-normal is-rounded is-dark"
+                                            >
+                                                <span class="icon">
+                                                    <i
+                                                        class="fab fa-github"
+                                                    ></i>
+                                                </span>
+                                                <span>Code</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero teaser">
+                <div class="container is-max-desktop">
+                    <div class="hero-body">
+                        <img
+                            src="static/images/cover_img_final.png"
+                            alt="INAVI overview and system cover image"
+                            loading="eager"
+                        />
+                        <h2 class="subtitle has-text-centered">
+                            INAVI assists visually impaired users navigate
+                            unfamiliar indoor environments by detecting and
+                            avoiding obstacles while alerting users to trip
+                            hazards.
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section hero is-light">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Abstract</h2>
+                            <div class="content has-text-justified">
+                                <p>
+                                    As the demand for accessible and sustainable
+                                    solutions in human care grows, artificial
+                                    intelligence (AI) and robotics are
+                                    increasingly being explored for their
+                                    potential to assist individuals with
+                                    disabilities. Recently, there has been a
+                                    growing research interest in robots that can
+                                    enhance autonomy and safety in daily
+                                    activities, bridging gaps in mobility and
+                                    spatial awareness. In this paper, I
+                                    introduce a novel robotic pipeline that
+                                    assists in the navigation of indoor spaces
+                                    for the visually impaired. The system
+                                    leverages cloud-based large language models
+                                    (LLMs) in an agentic workflow to classify
+                                    vocal input from the user and hold custom
+                                    commands and conversations with intuitive
+                                    and rich output. A combination of on-device
+                                    computer vision and cloud models are used to
+                                    spatially categorize environments, and
+                                    innovative path planning and motion
+                                    profiling algorithms are used to navigate
+                                    indoor spaces efficiently. The system uses
+                                    novel applications of LLMs for quantitative
+                                    robotic analysis for enhanced navigation and
+                                    interaction throughout the pipeline. The
+                                    mobile robot can be given a variety of voice
+                                    commands to move through spaces while
+                                    avoiding obstacles, and can describe such
+                                    obstacles to the user, warning them about
+                                    any hazards in their path. In a
+                                    75-participant user study, users gave high
+                                    ratings for the effectiveness of the scene
+                                    description and the ease of use of the
+                                    robot, and emphasized the positive impact of
+                                    the audio feedback capability on daily life
+                                    as well as the smoothness of custom verbal
+                                    interaction with the robot. This underscores
+                                    the substantial potential of robotics
+                                    powered by AI for assisting the visually
+                                    impaired in unfamiliar indoor environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container is-max-desktop">
+                    <h2 class="title is-3 has-text-centered">
+                        Method Pipeline
+                    </h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            The agent workflow has high levels of user
+                            interaction and input customization. Cloud-based
+                            actions are yellow, on-device actions are blue,
+                            audio-based actions are orange, vision-based actions
+                            are green, and movement actions are purple.
+                        </p>
+                    </div>
+                    <img
+                        src="static/images/agent_templ_3_new_exp_hq.png"
+                        alt="INAVI method pipeline"
+                        loading="lazy"
+                        style="width: 70%; max-width: 900px; display: block; margin: 0 auto"
+                    />
+                </div>
+            </section>
+
+            <section class="section hero is-light">
+                <div class="container is-max-desktop">
+                    <h2 class="title is-3 has-text-centered">Demo Videos</h2>
+                    <p class="subtitle has-text-centered">
+                        Note: some parts of demo videos were sped up to improve
+                        viewing quality.
+                    </p>
+                    <div class="columns is-variable is-6">
+                        <div class="column">
+                            <video
+                                controls
+                                preload="metadata"
+                                style="width: 100%"
+                            >
+                                <source
+                                    src="static/videos/demo_2_entrance.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                            <p
+                                class="subtitle has-text-centered"
+                                style="margin-top: 0.75rem"
+                            >
+                                Robot describing the living room, turning, and
+                                moving ahead.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <video
+                                controls
+                                preload="metadata"
+                                style="width: 100%"
+                            >
+                                <source
+                                    src="static/videos/demo_3_basement.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                            <p
+                                class="subtitle has-text-centered"
+                                style="margin-top: 0.75rem"
+                            >
+                                Robot avoiding obstacles and identifying trip
+                                hazards on the floor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column is-three-quarters">
+                            <video
+                                controls
+                                preload="metadata"
+                                style="width: 100%"
+                            >
+                                <source
+                                    src="static/videos/demo_1_carpet.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                            <p
+                                class="subtitle has-text-centered"
+                                style="margin-top: 0.75rem"
+                            >
+                                Robot describing scene details and alerting the
+                                user when the path is blocked.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container is-max-desktop">
+                    <h2 class="title is-3 has-text-centered">Photos</h2>
+                    <img
+                        src="static/images/labeled_robot.png"
+                        alt="INAVI robot with labeled components"
+                        loading="lazy"
+                    />
+                    <p class="subtitle has-text-centered">
+                        The INAVI robot with labeled components.
+                    </p>
+                    <div class="content has-text-justified">
+                        <p>
+                            Below are snapshots of the INAVI robot's camera
+                            feed, with depth vision on the top and real vision
+                            on the bottom. Detected obstacles are shown with red
+                            vertical lines and the safest location is shown with
+                            a blue vertical line.
+                        </p>
+                    </div>
+                    <img
+                        src="static/images/depth1.png"
+                        alt="INAVI camera feed sample 1"
+                        loading="lazy"
+                        style="margin-bottom: 1.5rem"
+                    />
+                    <img
+                        src="static/images/depth2.png"
+                        alt="INAVI camera feed sample 2"
+                        loading="lazy"
+                        style="margin-bottom: 1.5rem"
+                    />
+                    <img
+                        src="static/images/depth3.png"
+                        alt="INAVI camera feed sample 3"
+                        loading="lazy"
+                    />
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This page was built using the
+                                <a
+                                    href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Academic Project Page Template</a
+                                >
+                                which was adopted from the
+                                <a
+                                    href="https://nerfies.github.io"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Nerfies</a
+                                >
+                                project page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
